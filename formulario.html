@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" href="imagenes/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/formulario.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script>
+        // Script para mostrar un mensaje de éxito
+        function enviarFormulario(event) {
+            event.preventDefault(); // Evita el envío real del formulario
+            alert("Formulario enviado con éxito. ¡Gracias por contactarnos!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo"><img src="imagenes/logo.jpeg" width="90px" height="80px" alt="Logo" style="border-radius: 100px;"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="formulario.html" class="active">Formularios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-us">
+        <div class="overlay">
+            <h1 class="about-title">Formulario</h1>
+            <p class="about-subtitle">Envíanos tus dudas.</p>
+            <a href="documentos/Datos estadísticos_encuestas digitales.pdf" class="cta-button">Revisa nuestras encuestas</a>
+        </div>
+    </section>
+
+    <section class="formulario">
+        <h1>Formulario de Registro</h1>
+        <p>Por favor, complete la información a continuación:</p>
+        <!-- Agregar el evento onsubmit al formulario -->
+        <form action="#" method="POST" class="form" onsubmit="enviarFormulario(event)">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+            </div>
+            <div class="campo">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            </div>
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
+            </div>
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje aquí..."></textarea>
+            </div>
+            <div class="campo">
+                <label for="preferencia">Preferencia de Contacto:</label>
+                <select id="preferencia" name="preferencia">
+                    <option value="email">Correo Electrónico</option>
+                    <option value="telefono">Teléfono</option>
+                    <option value="ninguno">Ninguno</option>
+                </select>
+            </div>
+            <button type="submit" class="boton">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 EOG. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a id="face" href="https://www.facebook.com/share/15f9gqdAvc/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a id="ins" href="https://www.instagram.com/neuroprotesisdelhabla/profilecard/?igsh=c2ExOXlqdTIxd2hq" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

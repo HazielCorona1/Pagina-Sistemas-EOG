@@ -1,0 +1,248 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+}
+
+/* Encabezado */
+header {
+    background: #4a5568;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 110px;
+    height: 90px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #e2e8f0;
+}
+
+/* Sección Hero */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.6);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button.primary {
+    background-color: #3182ce;
+}
+
+.button.secondary {
+    background-color: #2d3748;
+}
+
+.button.primary:hover {
+    background-color: #63b3ed;
+}
+
+.button.secondary:hover {
+    background-color: #4a5568;
+}
+
+/* Contenido General */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+/* Sección Servicios */
+.servicio-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.servicio img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+/* Galería */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* Testimonios */
+.testimonio-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonio {
+    background: #f7fafc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+/* Estadísticas */
+.estadisticas-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.estadistica {
+    background: #2d3748;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    transition: transform 0.3s;
+}
+
+.estadistica:hover {
+    transform: translateY(-10px);
+}
+
+/* Contacto */
+.contacto {
+    background: #4a5568;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contacto p {
+    margin: 10px 0;
+}
+
+.contacto-button {
+    background-color: #63b3ed;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contacto-button:hover {
+    background-color: #2b6cb0;
+}
+
+/* Footer */
+footer {
+    background: #2d3748;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .redes-sociales a {
+    color: #e2e8f0;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .redes-sociales a:hover {
+    color: #63b3ed;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
